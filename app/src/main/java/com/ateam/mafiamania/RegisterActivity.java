@@ -10,7 +10,7 @@ import android.widget.EditText;
 /**
  * Android login screen Activity
  */
-public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
+    public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editTextUsername;
     private Button buttonSignup;
@@ -23,7 +23,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         editTextUsername = (EditText) findViewById(R.id.username);
-        buttonSignup = (Button) findViewById(R.id.sigup_in_button);
+        buttonSignup = (Button) findViewById(R.id.signup_button);
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,9 +34,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        if(v == buttonSignup){
-            registerUser();
-        }
+        /* This logic has been take care above using
+        above Lambda Expressions and Abstract classes
+            if(v == buttonSignup){
+                registerUser();
+            }
+        */
     }
 
     private void registerUser() {

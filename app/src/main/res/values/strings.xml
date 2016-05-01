@@ -5,6 +5,10 @@
     <string name="string_enter_username">Enter your username</string>
     <string name="string_choose_username">Choose your username</string>
     <string name="text_signup"><a href="">Signup</a></string>
+    <string name="text_play">Select your play mode</string>
+    <string name="text_or">\nOr</string>
+    <string name="button_offline">Offline</string>
+    <string name="button_online">Online</string>
     <string name="button_login">Login</string>
     <string name="button_register">Register</string>
 </resources>

@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         this.setContentView(R.layout.activity_login);
 
         editTextUsername = (EditText) findViewById(R.id.username);
-        buttonLogin = (Button) findViewById(R.id.sign_in_button);
+        buttonLogin = (Button) findViewById(R.id.login_button);
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +35,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
 
         TextView signupLink = (TextView) findViewById(R.id.sign_up_link);
+        assert signupLink != null;
         signupLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,9 +48,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        if(v == buttonLogin){
-            loginUser();
-        }
+        /* This logic has been take care above using
+        above Lambda Expressions and Abstract classes
+            if(v == buttonLogin){
+                loginUser();
+            }
+        */
     }
 
     private void loginUser() {

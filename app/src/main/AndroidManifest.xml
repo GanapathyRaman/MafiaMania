@@ -26,13 +26,15 @@
         </activity>
 
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/app_name">
+            android:name=".PlayModeActivity">
         </activity>
 
         <activity
-            android:name=".RegisterActivity"
-            android:label="@string/app_name">
+            android:name=".LoginActivity">
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity">
         </activity>
 
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for

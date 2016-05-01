@@ -10,7 +10,7 @@
     android:focusableInTouchMode="true">
 
     <LinearLayout
-        android:id="@+id/ll1"
+        android:id="@+id/a31"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -21,13 +21,13 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/app_name"
-            android:id="@+id/textView2"
-            android:textSize="40dp"
+            android:id="@+id/appName2"
+            android:textSize="40sp"
             android:textColor="#dfd50f" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ll2"
+        android:id="@+id/a32"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -36,13 +36,13 @@
         <LinearLayout android:id="@+id/login_form" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:orientation="vertical">
 
-            <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+            <ScrollView android:id="@+id/login_form_scroll_view" android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <AutoCompleteTextView android:id="@+id/username" android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:hint="@string/string_enter_username"
                     android:inputType="textPersonName" android:maxLines="1"
                     android:singleLine="true"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="10sp"
                     android:textColorHint="#ffffffff"
                     android:textColor="#ffffffff" />
             </ScrollView>
@@ -50,14 +50,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ll2"
+        android:id="@+id/a33"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center_horizontal">
-        <Button android:id="@+id/sigup_in_button" style="?android:textAppearanceSmall"
+        <Button android:id="@+id/signup_button" style="?android:textAppearanceMedium"
             android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_marginTop="20dp" android:text="@string/button_register"
+            android:layout_marginTop="20sp" android:text="@string/button_register"
             android:textStyle="bold"
             android:textColor="#ffffffff"
             android:background="#ff7e51c2" />
