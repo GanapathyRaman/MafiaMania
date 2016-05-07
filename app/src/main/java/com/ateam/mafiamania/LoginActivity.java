@@ -57,6 +57,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void loginUser() {
+            StringBuffer response = new StringBuffer();
         String username = editTextUsername.getText().toString().trim().toLowerCase();
         SendGetRequest sendGetRequest = new SendGetRequest(this, LOGIN_URL, username);
         sendGetRequest.createGetRequestAndSend();
