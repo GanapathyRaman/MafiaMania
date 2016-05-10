@@ -8,6 +8,13 @@ import android.widget.TextView;
 
 public class Temp extends AppCompatActivity implements View.OnClickListener {
 
+    private String usernameInUpperCase (String s){
+        if(s == null || s.isEmpty())
+            return "Anonymous User";
+        else
+            return s.substring(0, 1).toUpperCase() + s.substring(1);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -17,7 +24,7 @@ public class Temp extends AppCompatActivity implements View.OnClickListener {
         TextView tempText = (TextView) findViewById(R.id.tempT);
         SendGetRequest sendReq = new SendGetRequest();
         tempText.append("Hi ");
-        tempText.append(sendReq.getUsername().toUpperCase() + " :)\n\n");
+        tempText.append(usernameInUpperCase(sendReq.getUsername()) + " :)\n\n");
         tempText.append("Thanks for registering with us. Currently the app is in Beta version. " +
                 "Support for the Online mode is under development and will be released soon.");
     }

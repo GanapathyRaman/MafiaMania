@@ -18,6 +18,14 @@ public class PlayModeActivity extends AppCompatActivity implements View.OnClickL
         this.setContentView(R.layout.activity_game_mode);
 
         buttonOffline = (Button) findViewById(R.id.buttonOffline);
+        buttonOffline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PlayModeActivity.this, AddOrDeletePlayers.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+            }
+        });
 
         buttonOnline = (Button) findViewById(R.id.buttonOnline);
         buttonOnline.setOnClickListener(new View.OnClickListener() {

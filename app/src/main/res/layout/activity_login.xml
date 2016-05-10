@@ -39,7 +39,7 @@
                 <ScrollView android:id="@+id/login_form_scroll_view" android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <AutoCompleteTextView android:id="@+id/username" android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:hint="@string/string_enter_username"
+                        android:layout_height="wrap_content" android:hint="@string/hint_string_enter_username"
                         android:inputType="textPersonName" android:maxLines="1"
                         android:singleLine="true"
                         android:layout_marginBottom="10sp"
