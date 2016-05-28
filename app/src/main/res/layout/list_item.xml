@@ -8,6 +8,5 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textAppearance="?android:textAppearanceMedium"
-        android:textSize="30sp"
-        />
+        android:textSize="30sp" />
 </LinearLayout>

@@ -15,7 +15,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private EditText editTextUsername;
     private Button buttonLogin;
-    private TextView signupLink;
 
     private static final String LOGIN_URL = "http://mafiamania.coolpage.biz/login.php";
 
@@ -57,7 +56,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void loginUser() {
-            StringBuffer response = new StringBuffer();
+        StringBuffer response = new StringBuffer();
         String username = editTextUsername.getText().toString().trim().toLowerCase();
         SendGetRequest sendGetRequest = new SendGetRequest(this, LOGIN_URL, username);
         sendGetRequest.createGetRequestAndSend();

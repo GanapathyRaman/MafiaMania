@@ -14,6 +14,8 @@
     <!-- String related to Regular Text -->
     <string name="text_play">Select your play mode</string>
     <string name="text_or">\nOr</string>
+    <string name="text_add_all_name">\u26A0 Add all the players including organizer \n</string>
+    <string name="text_select_organizer">Select the game organizer \n</string>
 
     <!-- String related to Buttons -->
     <string name="button_offline">Offline</string>
@@ -22,5 +24,8 @@
     <string name="button_register">Register</string>
     <string name="button_add">Add</string>
     <string name="button_next">Next</string>
+    <string name="button_update">Update</string>
+    <string name="button_cancel">Cancel</string>
+
 
 </resources>
